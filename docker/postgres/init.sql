@@ -1,2 +1,6 @@
-CREATE SCHEMA IF NOT EXISTS "servicio-clientes";
-CREATE SCHEMA IF NOT EXISTS "servicio-cuentas";
+CREATE DATABASE banco;
+
+\c banco;
+
+CREATE SCHEMA "servicio-clientes";
+CREATE SCHEMA "servicio-cuentas";
