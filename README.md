@@ -233,3 +233,13 @@ GET http://localhost:8082/reportes?inicio=YYYY-MM-DD&fin=YYYY-MM-DD
 * Persistencia con PostgreSQL
 
 ---
+
+## Colección Postman
+
+Se incluye la colección de Postman para probar los endpoints del sistema.
+
+Archivo:
+
+postman_collection.json
+
+Importar en Postman para ejecutar las pruebas de la API.
