@@ -82,37 +82,12 @@ Opcional para desarrollo local:
 ```id="step001"
 git clone https://github.com/TU_USUARIO/microservicios-banco.git
 ```
-
-Entrar al proyecto:
-
-```id="step002"
-cd microservicios-banco
-```
-
 ---
-
-## 2. Construir los microservicios
-
-Desde la raíz del proyecto ejecutar:
-
-```id="step003"
-mvn clean package
-```
-
-Esto generará los archivos `.jar` dentro de:
-
-```id="step004"
-cliente-service/target
-cuenta-service/target
-```
-
----
-
-## 3. Levantar el sistema con Docker
+## 2. Levantar el sistema con Docker
 
 Ejecutar:
 
-```id="step005"
+```id="step002"
 docker compose up --build
 ```
 
@@ -125,9 +100,9 @@ Esto iniciará automáticamente los siguientes servicios:
 
 ---
 
-## 4. Verificar que los contenedores estén corriendo
+## 3. Verificar que los contenedores estén corriendo
 
-```id="step006"
+```id="step003"
 docker ps
 ```
 
@@ -157,7 +132,7 @@ banco-rabbit
 
 Acceder al panel de administración:
 
-```id="step007"
+```id="step004"
 http://localhost:15672
 ```
 
@@ -174,7 +149,7 @@ password: guest
 
 ## Crear cliente
 
-```id="step008"
+```id="step005"
 POST http://localhost:8080/clientes
 ```
 
@@ -199,7 +174,7 @@ Ejemplo:
 
 ## Consultar cuentas
 
-```id="step009"
+```id="step006"
 GET http://localhost:8082/cuentas
 ```
 
@@ -207,7 +182,7 @@ GET http://localhost:8082/cuentas
 
 ## Registrar movimiento
 
-```id="step010"
+```id="step07"
 POST http://localhost:8082/movimientos
 ```
 
@@ -215,7 +190,7 @@ POST http://localhost:8082/movimientos
 
 ## Generar reporte de movimientos
 
-```id="step011"
+```id="step08"
 GET http://localhost:8082/reportes?inicio=YYYY-MM-DD&fin=YYYY-MM-DD
 ```
 
